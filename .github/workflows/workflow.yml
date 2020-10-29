@@ -32,7 +32,8 @@ jobs:
     - run: cat index.html
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp/build/web
 
-
+    - run: git init
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp/build/web
     - run: git config user.name  "CI"
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp/build/web
     - run: git config user.email "flutter-ci@github.com"
