@@ -23,18 +23,18 @@ jobs:
     - run: flutter build web --release
     - run: pwd
     - run: git init
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git config user.name  "CI"
-      working-directory: /home/runner/work/flutter_web_tmpflutter_web
+      working-directory: /home/runner/work/flutter_web_tmpflutter_web_tmp
     - run: git config user.email "flutter-ci@github.com"
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git remote add secure-origin https://${{ secrets.ACCESS_TOKEN }}@github.com/dleurs/flutter_web.git
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git checkout -b gh-pages
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git add .
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git commit -m "Updated docs" --allow-empty
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git push --force secure-origin gh-pages
-      working-directory: /home/runner/work/flutter_web_tmp/flutter_web
+      working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
