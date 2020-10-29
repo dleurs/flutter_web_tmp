@@ -27,7 +27,7 @@ jobs:
     
     - run: cat index.html
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp/build/web
-    - run: sed -i '' '/base href/d' index.html
+    - run: sed -i '/base href/d' index.html #For MacOS : sed -i '' '/base href/d' index.html
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp/build/web
     - run: cat index.html
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp/build/web
