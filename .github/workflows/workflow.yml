@@ -28,7 +28,7 @@ jobs:
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git config user.email "flutter-ci@github.com"
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
-    - run: git remote add secure-origin https://${{ secrets.ACCESS_TOKEN }}@github.com/dleurs/flutter_web.git
+    - run: git remote add secure-origin https://${{ secrets.ACCESS_TOKEN }}@github.com/dleurs/flutter_web_tmp.git
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
     - run: git checkout -b gh-pages
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web_tmp
