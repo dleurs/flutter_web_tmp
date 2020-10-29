@@ -20,7 +20,8 @@ jobs:
     - run: flutter upgrade # You also get the flutter version
     - run: flutter config --enable-web
     - run: flutter packages get
-    - run: flutter build web
+    - run: flutter build web --release
+    - run: pwd
     - run: git init
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web
     - run: git config user.name  "CI"
