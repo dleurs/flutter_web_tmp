@@ -22,7 +22,6 @@ jobs:
     - run: flutter packages get
     - run: flutter build web
     - run: git init
-    - run: pwd
       working-directory: /home/runner/work/flutter_web_tmp/flutter_web
     - run: git config user.name  "CI"
       working-directory: /home/runner/work/flutter_web_tmpflutter_web
